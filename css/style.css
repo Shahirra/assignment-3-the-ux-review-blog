@@ -2028,10 +2028,263 @@ h1 .ideas {
 
 /* End Community Section */
 
+/* *Start Footer Section */
 
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 65px 0;
+}
 
+/* Footer Content */
 
-/* *Start Fonts */
+.footer-content {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 55px;
+}
+
+/* Brand */
+
+.footer-brand {
+    width: 35%;
+}
+
+.logo {
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5e9;
+    color: #111827;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo h3 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.footer-brand p,
+.footer-newsletter p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Categories */
+
+.footer-links h3,
+.footer-newsletter h3 {
+    font-size: 22px;
+    margin: 10px 0 35px;
+    font-weight: 900;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 22px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffe500;
+}
+
+/* Newsletter */
+
+.footer-newsletter {
+    width: 35%;
+}
+
+.footer-newsletter p {
+    margin-bottom: 30px;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    padding: 16px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Exo", 'sans-serif';
+}
+
+.footer-newsletter input::placeholder {
+    color: gray;
+}
+
+.footer-newsletter button {
+    width: 100%;
+    padding: 16px;
+    background-color: #ffe500;
+    color: #171717;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: "Exo", 'sans-serif';
+}
+
+/* Button Hover */
+
+.footer-newsletter button:hover {
+    transform: translate(6px, 6px);
+    background-color: #FDC700;
+    border: 3px solid #000;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #f5f5e9;
+    padding-top: 25px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-policy {
+    gap: 30px;
+}
+
+.footer-policy a {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Responsive */
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        width: 55%;
+    }
+
+    .footer-links {
+        width: 30%;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .footer {
+        padding: 40px 0 25px;
+    }
+
+    .footer .container {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .logo-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 24px;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    .footer-brand p,
+    .footer-newsletter p {
+        font-size: 15px;
+    }
+
+    .footer-links h3,
+    .footer-newsletter h3 {
+        font-size: 23px;
+        margin-bottom: 22px;
+    }
+
+    .footer-links li {
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .footer-policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-policy a {
+        font-size: 11px;
+    }
+
+}
+
+/* * Fonts */
 
 @font-face {
     font-family: "Exo";
